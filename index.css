@@ -6,6 +6,9 @@
 body{
     background-image: url(./img/background_image.jpg);
     color: white;
+    background-size: cover;
+    background-attachment: fixed;
+
 }
 
 .container{
@@ -79,6 +82,7 @@ body{
 #comment{
     border: none;
     margin-top: 10px;
+    resize: none;
 }
 
 #submit{
