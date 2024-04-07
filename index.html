@@ -11,14 +11,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Sorts+Mill+Goudy:ital@0;1&display=swap" rel="stylesheet">
 
     <title>Survey Form</title>
-    <link rel="stylesheet" href="result.html">
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <div class="container">
         <h1 class="heading" id="title">Net<span id="span1">Flix</span></h1>
         <h3 id="description">Thank you for signing up at Netflix. Tell us more about your self</h3>
-        <form action="" method="get" id="survey-form">
+        <form action="result.html" method="get" id="survey-form" target="_blank">
             <div class="box">
                 <label for="name">Name</label>
                 <br>
@@ -40,9 +39,11 @@
             <div class="box">
                 <label for="dropdown" id="dropdown-label">Content type</label>
                 <br>
-                <select name="Content" id="dropdown" size="1"></select>
-                <option value="Movie">Movie</option>
-                <option value="Series" selected>Series</option>
+                <select name="Content" id="dropdown">
+                    <option value="Movie">Movie</option>
+                    <option value="Series" selected>Series</option>
+                </select>
+                
             </div>
             <br>
             <div class="box">
@@ -64,6 +65,7 @@
                 </label>
                 <br>                
             </div>
+            <br>
             <div class="box">
                 <label for="gender">Gender</label>
                 <br>
